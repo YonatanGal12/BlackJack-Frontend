@@ -1,0 +1,22 @@
+.table-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    position: relative;
+}
+
+.table-image{
+    width: 80%;
+    display: block;
+}
+
+.table-overlay {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 5rem;
+  pointer-events: none; /* optional: makes clicks pass through */
+}

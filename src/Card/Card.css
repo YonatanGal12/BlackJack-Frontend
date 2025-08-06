@@ -1,0 +1,15 @@
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(212, 210, 210);
+}
+
+
+
+.card-image{
+    width: 5rem;
+}
