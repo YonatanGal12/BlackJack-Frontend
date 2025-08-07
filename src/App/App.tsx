@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Button from './Button/Button';
-import Card from './Card/Card';
-import Table from './Table/Table';
+import Button from '../Components/Button/Button';
+import Card from '../Components/Card/Card';
+import Table from '../Components/Table/Table';
 
 
 function App() {
