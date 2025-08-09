@@ -1,0 +1,24 @@
+button{
+    width: 7rem;
+    height: 20em;
+    
+    margin: 10px;
+
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.Hit{
+    background-color: green;
+
+}
+
+.Stand{
+    background-color: red;
+}

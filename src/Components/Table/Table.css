@@ -14,9 +14,9 @@
 }
 
 .table-overlay {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  width: 5rem;
-  pointer-events: none; /* optional: makes clicks pass through */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 5rem;
+    pointer-events: none; 
 }
