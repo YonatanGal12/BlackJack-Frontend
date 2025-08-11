@@ -1,7 +1,4 @@
 button{
-    width: 7rem;
-    height: 20em;
-    
     margin: 10px;
 
     border-radius: 5px;
@@ -14,11 +11,30 @@ button:hover{
     cursor: pointer;
 }
 
-.Hit{
+.hit, .stand{
+    width: 7rem;
+    height: 20em;
+}
+
+.hit{
     background-color: green;
 
 }
 
-.Stand{
+.stand{
     background-color: red;
+}
+
+.start{
+    position: absolute; /* positioned relative to .table-container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-52.5%, -70%);
+
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    font-size: 7rem;
+    width: 1000%;
+
 }

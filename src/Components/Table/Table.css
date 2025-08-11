@@ -15,8 +15,23 @@
 
 .table-overlay {
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    top: 50%;
+    left: 48%;
     width: 5rem;
-    pointer-events: none; 
+
+    z-index: 2;
+}
+
+.dealer-icon-container{
+    position: absolute;
+    top: 5%;
+    left: 46%;
+    transform: translate(-50%, -100%);
+}
+
+.player-icon-container{
+    position: absolute;
+    top: 76%;
+    left: 46%;
+    transform: translate(50%, 100%);
 }

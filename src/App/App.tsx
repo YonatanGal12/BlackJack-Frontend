@@ -4,6 +4,7 @@ import Button from '../Components/Button/Button';
 import Card from '../Components/Card/Card';
 import Table from '../Components/Table/Table';
 import Score from '../Components/Score/Score';
+import Icon from '../Components/Icon/Icon';
 
 function App() {
 
@@ -100,9 +101,8 @@ function App() {
 
     return(
       <>
-        <Score value={playerScore}></Score>
-        <Table>
-          <Card name="King of Hearts" value={10}></Card>
+        <Table> 
+          <Button text='Start Game!' onClick={handleStart}></Button>
         </Table>
       </>
     );

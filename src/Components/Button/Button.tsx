@@ -1,16 +1,18 @@
 import './Button.css'
 
 
-interface ButtonProps {
+interface ButtonProps{
     text: string,
     onClick?: () => void
 }
 
 function Button({text, onClick}: ButtonProps) {
+    if(text.includes("Start"))
+        return(
+            <button className="start" onClick={onClick}>{text}</button>
+        )
     return(
-        <>
-            <button className={text} onClick={onClick}>{text}</button>
-        </>
+        <button className={text.toLocaleLowerCase()} onClick={onClick}>{text}</button>
     )
 }
 
