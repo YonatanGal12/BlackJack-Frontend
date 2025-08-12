@@ -1,16 +1,17 @@
 import "./Card.css";
 import { getCardImage } from "../../Utils/helper";
-
+import { Rank, Suit } from "../../Utils/types";
 interface CardProps{
-    name: string,
+    rank: Rank,
+    suit: Suit,
     value: number
 }
 
-function Card({name, value}: CardProps) {
+function Card({rank, suit, value}: CardProps) {
     return(
         <>
             <div className='card-container'>
-                <img className='card-image' src={getCardImage("ace","clubs")} alt="King of hearts"></img>
+                <img className='card-image' src={getCardImage(rank,suit)} alt="King of hearts"></img>
             </div>
         </>
     )

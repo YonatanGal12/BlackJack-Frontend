@@ -38,7 +38,7 @@ function App() {
         setMessage(gameDetails.message);
 
 
-        if (message.includes('Game Over')) 
+        if (message.includes('Busted')) 
         {
           //Play again, imma do this later
         }
