@@ -1,13 +1,12 @@
 import "./Card.css";
-import { getCardImage } from "../../Utils/helper";
-import { Rank, Suit } from "../../Utils/types";
+import { getCardImage } from "../../utils/helper";
+import { Rank, Suit } from "../../utils/types";
 interface CardProps{
     rank: Rank,
-    suit: Suit,
-    value: number
+    suit: Suit
 }
 
-function Card({rank, suit, value}: CardProps) {
+function Card({rank, suit}: CardProps) {
     return(
         <>
             <div className='card-container'>

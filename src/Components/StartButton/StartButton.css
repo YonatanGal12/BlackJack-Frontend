@@ -16,17 +16,8 @@ button:hover{
     height: 20em;
 }
 
-.hit{
-    background-color: green;
-
-}
-
-.stand{
-    background-color: red;
-}
-
 .start{
-    position: absolute; /* positioned relative to .table-container */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-52.5%, -70%);
