@@ -1,11 +1,15 @@
 import './Icon.css'
 
-function Icon()
+interface IconProps{
+    remainingCards: number
+}
+function Icon({remainingCards}: IconProps)
 {
     return(
         <>
             <div className='icon-container'>
-                <img className="icon-image" src={'/images/dealer.png'} alt="Dealer" />
+                <span className="remaining-cards">{remainingCards}</span>
+                <img className="icon-image" src={'/images/dealer_image.png'} alt="Dealer" />
             </div>
         </>
     )

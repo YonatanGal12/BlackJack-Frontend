@@ -8,7 +8,7 @@ interface CardRowProps
   cards: GameCard[];
 }
 
-function CardRow({cards}: CardRowProps)
+function CardRow({cards = []}: CardRowProps)
 {
     return(
         <div className="card-row">

@@ -1,9 +1,16 @@
-import "./GameButton"
+import "./GameButton.css"
 
-
-function GameButton()
+interface GameButtonProps{
+    text: string,
+    onClick: () => void
+}
+function GameButton({text, onClick}: GameButtonProps)
 {
-
+    return(
+        <>
+            <button className="game-button" onClick={onClick}>{text}</button>
+        </>
+    )
 }
 
 export default GameButton;

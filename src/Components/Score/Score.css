@@ -1,8 +1,11 @@
 .score-container{
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
 
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;     
     padding: 10px;
 
     width: 10vw;
@@ -12,7 +15,4 @@
     justify-content: center;
 
     border-radius: 5px;
-
-    margin: 10px;
-
 }

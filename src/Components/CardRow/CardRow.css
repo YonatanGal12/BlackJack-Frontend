@@ -1,0 +1,10 @@
+.card-row{
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 0.6rem;
+    margin: 20px 0;
+}

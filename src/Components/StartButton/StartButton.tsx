@@ -2,14 +2,13 @@ import './StartButton.css'
 
 
 interface StartButtonProps{
-    text: string,
     onClick?: () => void
 }
 
-function StartButton({text, onClick}: StartButtonProps) {
+function StartButton({onClick}: StartButtonProps) {
     return(
         <div>
-            <button className="start-btn" onClick={onClick}>{text}</button>
+            <button className="start-btn" onClick={onClick}>Start Game</button>
         </div>
     )
 }

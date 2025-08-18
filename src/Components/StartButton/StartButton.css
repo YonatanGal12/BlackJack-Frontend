@@ -1,31 +1,11 @@
-button{
-    margin: 10px;
 
-    border-radius: 5px;
-    position: relative;
-
-
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.hit, .stand{
-    width: 7rem;
-    height: 20em;
-}
-
-.start{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-52.5%, -70%);
-
+.start-btn{
     background-color: transparent;
-    text-align: center;
+    color: white;
+    font-size: 6rem;
+    font-weight: bolder;
     border: none;
-    font-size: 7rem;
-    width: 1000%;
-
+} 
+.start-btn:hover{
+    cursor: pointer;
 }

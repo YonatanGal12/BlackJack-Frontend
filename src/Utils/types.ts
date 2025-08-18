@@ -1,4 +1,4 @@
-export type Suit = "spades" | "hearts" | "diamonds" | "clubs";
+export type Suit = "spades" | "hearts" | "diamonds" | "clubs" | "hidden";
 
 export type Rank = '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | 'jack' | 'queen' | 'king' | 'ace';
 
@@ -22,3 +22,7 @@ export const rankToValue: Record<Rank, number> = {
     'king': 10,
     'ace': 11
 };
+
+export type GamePhase = "idle" | "playing" | "over";
+
+

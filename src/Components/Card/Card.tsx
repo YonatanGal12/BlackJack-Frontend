@@ -1,6 +1,7 @@
 import "./Card.css";
 import { getCardImage } from "../../utils/helper";
 import { Rank, Suit } from "../../utils/types";
+
 interface CardProps{
     rank: Rank,
     suit: Suit
