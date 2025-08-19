@@ -1,9 +1,8 @@
 import "./GameOverModal.css";
-import StartButton from "../StartButton/StartButton";
 
 interface GameOvelModalProps{
     message: string,
-    handleStart: () => void
+    handleStart: () => void,
 }
 
 function GameOverModal({message, handleStart}: GameOvelModalProps)

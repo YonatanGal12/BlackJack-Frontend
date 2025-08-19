@@ -23,6 +23,6 @@ export const rankToValue: Record<Rank, number> = {
     'ace': 11
 };
 
-export type GamePhase = "idle" | "playing" | "over";
+export type GamePhase = "idle" | "betting" | "playing" | "over";
 
 

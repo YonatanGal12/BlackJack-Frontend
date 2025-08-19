@@ -18,10 +18,15 @@ function GameBoard()
       isFirstTurn,
       phase,
       remainingCards,
+      totalMoney,
+      currentBet,
       handleStart,
       handleHit,
       handleStand,
       handleDouble,
+      goToBetting,
+      resetMoney,
+      handleBetting
     } = useBlackjackGame();
 
     return(
@@ -30,7 +35,7 @@ function GameBoard()
             <div className="icon-container">
                 <Icon remainingCards={remainingCards}/>
             </div>
-            <GameTable dealerHand={dealerHand} dealerScore={dealerScore} playerHand={playerHand} playerScore={playerScore} phase={phase} message={message} handleStart={handleStart}/> 
+            <GameTable dealerHand={dealerHand} dealerScore={dealerScore} playerHand={playerHand} playerScore={playerScore} phase={phase} totalMoney={totalMoney} currentBet={currentBet} message={message} handleStart={handleStart} goToBetting={goToBetting} resetMoney={resetMoney} handleBetting={handleBetting}/> 
             <div className="buttons-container">
                 {phase === "playing" && <GameButton text="Hit" onClick={handleHit}></GameButton>}
                 {phase === "playing" && <GameButton text="Stand" onClick={handleStand}></GameButton> }

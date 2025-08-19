@@ -1,11 +1,11 @@
-.message-container {
+.bet-container{
     position: absolute;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 0.95rem;
 
     width: 30vw;
     padding: 1vw 3vh;
@@ -18,7 +18,11 @@
     text-align: center;
 }
 
-.message-container button {
+.bet-input{
+    text-align: center;
+}
+
+.place-bet-btn{
     background: linear-gradient(145deg, rgb(33, 146, 60), rgb(20, 112, 43)); 
     color: white;
     font-size: 1.1rem;
@@ -28,9 +32,24 @@
     border-radius: 12px;
 }
 
-.message-container button:hover {
+.place-bet-btn:hover{
     background: linear-gradient(145deg, rgb(40, 175, 69), rgb(22, 111, 43));
     cursor: pointer;
     transform: translateY(-2px);
 }
 
+.loser-btn{
+    background: linear-gradient(145deg, rgb(154, 57, 33), rgb(145, 47, 17)); 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5vw 1vh;
+    border: 2px solid rgb(61, 23, 9);
+    border-radius: 12px;
+}
+
+.loser-btn:hover{
+    background: linear-gradient(145deg, rgb(157, 70, 36), rgb(124, 40, 14)); 
+    cursor: pointer;
+    transform: translateY(-2px);
+}
