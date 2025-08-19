@@ -5,6 +5,8 @@
     font-size: 6rem;
     font-weight: bolder;
     border: none;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;  
 } 
 .start-btn:hover{
     cursor: pointer;

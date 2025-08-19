@@ -1,3 +1,11 @@
+.restart-container{
+    position: absolute;
+    display: flex;
+    flex-direction: start;
+    margin: 0.5rem;
+}
+
+
 .items-container{
     display: flex;
     flex-direction: column;
@@ -17,7 +25,7 @@
     gap: 10px;
     padding: 10px;
     min-height: 130px;
-    transform: translateY(-3vh);
+    transform: translateY(-5vh);
 }
 
 .money-stuff-container{
@@ -27,7 +35,7 @@
     gap: 1rem;
 
     position: absolute;
-    transform: translateY(19rem);
+    transform: translateY(18.5rem);
 }
 
 .over-money-container{

@@ -10,7 +10,7 @@
     width: 30vw;
     padding: 1vw 3vh;
     background: rgba(0, 0, 0, 0.85);
-    border: 3px solid rgb(119, 50, 3);
+    border: 3px solid gold;
     border-radius: 20px;
 
     color: white;
@@ -18,8 +18,54 @@
     text-align: center;
 }
 
+.total-money{
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;  
+}
+
+.total-money span{
+    color: gold;
+}
+
 .bet-input{
+    font-weight: bold;
+    font-size: 1rem;
+    width: 50%;
+    color: white;
     text-align: center;
+    background-color: transparent;
+    padding: 0.4rem 0.8rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+.bet-input:focus{
+    border: 2px solid gold;
+    animation: blink 4s infinite linear;
+}
+
+.bet-input::-webkit-outer-spin-button,
+.bet-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes blink{
+    0%{
+        border-color: gold;
+    }
+    25%{
+        border-color: black;
+    }
+    50%{
+        border-color: gold;
+    }
+    75%{
+        border-color: black;
+    }
+    100%{
+        border-color: gold;
+    }
 }
 
 .place-bet-btn{

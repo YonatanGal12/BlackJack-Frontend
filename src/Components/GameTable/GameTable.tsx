@@ -1,8 +1,6 @@
-import { ReactNode, useState } from 'react';
 import './GameTable.css';
 import StartButton from '../StartButton/StartButton';
 import CardRow from '../CardRow/CardRow';
-import { useBlackjackGame } from '../../utils/useBlackjackGame';
 import { GameCard } from '../../utils/types';
 import Score from '../Score/Score';
 import GameOverModal from '../GameOverModal/GameOverModal';
@@ -16,14 +14,12 @@ interface GameTableProps{
     playerScore: number,
     phase: GamePhase,
     totalMoney: number,
-    currentBet: number,
     message: string,
-    handleStart: () => void,
     goToBetting: () => void,
     resetMoney: () => void,
     handleBetting: (amount: number) => void
 }
-function GameTable({dealerHand, dealerScore, playerHand, playerScore, phase, totalMoney, currentBet, message, handleStart, goToBetting, resetMoney, handleBetting}:  GameTableProps) {
+function GameTable({dealerHand, dealerScore, playerHand, playerScore, phase, totalMoney, message, goToBetting, resetMoney, handleBetting}:  GameTableProps) {
 
     return(
         <>
