@@ -41,6 +41,13 @@ function GameBoard()
                 {phase === "playing" && <GameButton text="Stand" onClick={handleStand}></GameButton> }
                 {(phase === "playing" && isFirstTurn) && <GameButton text="Double" onClick={handleDouble}></GameButton> }
             </div>
+            {phase === "playing" && <div className="money-stuff-container">
+              {<div className="money-div">Current bet: {currentBet}$</div>}
+              {<div className="money-div">Total money: {totalMoney}$</div>}
+            </div>}
+            {phase === "over" && <div className="money-stuff-container over-money-container">
+              {<div className="money-div">Total money: {totalMoney}$</div>}
+            </div>}
         </div>
       </>
     )

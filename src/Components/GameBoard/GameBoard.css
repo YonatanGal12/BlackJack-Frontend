@@ -19,3 +19,30 @@
     min-height: 130px;
     transform: translateY(-3vh);
 }
+
+.money-stuff-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    position: absolute;
+    transform: translateY(19rem);
+}
+
+.over-money-container{
+    transform: translateY(15rem);
+}
+
+.money-div{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;  
+    
+    background: rgba(0, 0, 0, 0.85);
+    border: 3px solid rgb(119, 50, 3);
+    border-radius: 20px;
+    padding: 0.5vw 1.5vh;
+}
